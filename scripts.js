@@ -2,6 +2,13 @@
 
 // Given the following code, write a for loop that pushes the names of all the magazine editors into the array, magazineEditors.
 
+
+//const numbers = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < numbers.length; i++) {
+//   console.log(numbers[i]);
+// }
+
 // Log the magazineEditors array when you're done to make sure you got it!
 
 let magazineEditors = [];
@@ -32,7 +39,13 @@ let magazines = [
   },
 ];
 
+for (i = 0; i < magazines.length; i++) {
 
+  let editorName = magazines[i].editor;
+  magazineEditors.push(editorName);
+
+}
+console.log(magazineEditors);
 
 
 
@@ -80,7 +93,16 @@ let movieTheater = [
 
 // Loop through this collection to log to the console all of the theaters that are playing a comedy.
 
+let comedies = [];
 
+for (i = 0; i < movieTheater.length; i++) {
+
+if (movieTheater[i].genre === "Comedy")
+comedies.push(movieTheater[i]);
+
+
+};
+console.log(comedies);
 
 
 
@@ -92,7 +114,16 @@ let arrayNumbers = [0, 7, 10, 12, 13, 20, 23, 27, 30, 60, 67, 88];
 // Loop through each of the elements in the array and only console log the numbers that are divisible by 10.
 
 
+let divisibleArray = [];
 
+for(i = 0; i < numbersArray.length; i++) {
+  let numbers = numbersArray[i];
+  if (numbers % 10 === 0) {
+    divisibleArray.push(numbers);
+  }
+}
+
+console.log(divisibleArray);
 
 
 
@@ -181,3 +212,7 @@ let totalScore = 0;
 
 
 let averageScore = totalScore / scores.length;
+
+
+
+
