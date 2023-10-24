@@ -116,8 +116,8 @@ let arrayNumbers = [0, 7, 10, 12, 13, 20, 23, 27, 30, 60, 67, 88];
 
 let divisibleArray = [];
 
-for(i = 0; i < numbersArray.length; i++) {
-  let numbers = numbersArray[i];
+for(i = 0; i < arrayNumbers.length; i++) {
+  let numbers = arrayNumbers[i];
   if (numbers % 10 === 0) {
     divisibleArray.push(numbers);
   }
@@ -145,8 +145,13 @@ let arrayWords = [
 // Use a loop to log this to the console as one string.
 
 
+let string = "";
 
+for (i = 0; i< arrayWords.length; i++) {
+  string = string + arrayWords[i] + " ";
+};
 
+console.log(string);
 
 
 /********************** BONUS EXERCISES ***********************/
